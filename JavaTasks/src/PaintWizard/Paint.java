@@ -3,10 +3,10 @@ package PaintWizard;
 public class Paint {
 	
 	private String paintBrand;
-	private int volume;
-	private double price, coverSpace;
+	private int volume, coverSpace;
+	private double price;
 	
-	public Paint(String paintBrand, int volume, double price, double coverSpace) {
+	public Paint(String paintBrand, int volume, double price, int coverSpace) {
 		
 		this.paintBrand = paintBrand;
 		this.volume = volume;
@@ -27,7 +27,7 @@ public class Paint {
 		return price;
 	}
 
-	public double getCoverSpace() {
+	public int getCoverSpace() {
 		return coverSpace;
 	}
 

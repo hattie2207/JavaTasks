@@ -1,0 +1,28 @@
+package PaintWizard;
+
+import java.util.ArrayList;
+
+public class PaintWizard {
+	
+	public void calculateCheapest(ArrayList<Paint> paintList) {
+		
+	}
+	
+	public static void main(String[] args) {
+		
+		double roomSize = 50;
+		
+		Paint paintOne = new Paint("CheapoMax", 20, 19.99, 10);
+		Paint paintTwo = new Paint("AverageJoes", 15, 17.99, 11);
+		Paint paintThree = new Paint("DuluxourousPaints", 10, 25, 20);
+		
+		ArrayList<Paint> paintList = new ArrayList<Paint>();
+		paintList.add(paintOne);
+		paintList.add(paintTwo);
+		paintList.add(paintThree);
+		
+//		System.out.println(paintList);		
+		
+	}
+
+}

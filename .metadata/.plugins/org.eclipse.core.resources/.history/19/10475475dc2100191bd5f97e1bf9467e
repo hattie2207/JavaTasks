@@ -1,0 +1,13 @@
+package PaintWizard;
+
+public class Paint {
+	
+	String paintBrand;
+	int volume;
+	double price, coverSpace;
+	
+	public Paint(String paintBrand, int volume, double price, double coverSpance) {
+		
+	}
+
+}

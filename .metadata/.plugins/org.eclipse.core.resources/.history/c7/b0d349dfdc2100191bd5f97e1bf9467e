@@ -1,0 +1,22 @@
+package PaintWizard;
+
+public class Paint {
+	
+	String paintBrand;
+	int volume;
+	double price, coverSpace;
+	
+	public Paint(String paintBrand, int volume, double price, double coverSpace) {
+		
+		this.paintBrand = paintBrand;
+		this.volume = volume;
+		this.price = price;
+		this.coverSpace = coverSpace;
+		
+	}
+	
+	public String toString() {
+		return "";
+	}
+
+}

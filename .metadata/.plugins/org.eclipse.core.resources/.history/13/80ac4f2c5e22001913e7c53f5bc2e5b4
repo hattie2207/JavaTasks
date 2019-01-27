@@ -5,30 +5,17 @@ import java.util.ArrayList;
 public class PaintWizard {
 
 	private static String leastWaste(double roomSize, ArrayList<Paint> paintList) {
-		
-		double tempt = 0;
-		double leastWaste = 0;
-		String leastWasteBrand = "";
+
+		double waste = 0;
 
 		for (Paint p : paintList) {
 
-			tempt = (roomSize / p.getCoverSpace()) * p.getVolume();	
-			if (leastWaste == 0) {
-				leastWaste = tempt;
-				leastWasteBrand = p.getPaintBrand();
-			}
-			else if (tempt < leastWaste) {
-				leastWaste = tempt; 
-				leastWasteBrand = p.getPaintBrand();
-			}
-			else {
+			waste = (roomSize / p.getCoverSpace()) * p.getPrice();
 
-			}
-
+			
 		}
 		
-		return leastWasteBrand + " waste the least and use total paint of " + leastWaste +
-				" Litres";
+		return ""; 
 	}
 
 	private static String calculateCheapest(double roomSize, ArrayList<Paint> paintList) {
@@ -54,7 +41,8 @@ public class PaintWizard {
 
 		}
 
-		return "The cheapest paint to buy for any room is " + cheapestBrand;
+		return "The cheapest paint to buy for any room is: " + cheapestBrand 
+				+ " for £" + cheapest;
 
 	}
 

@@ -27,8 +27,7 @@ public class PaintWizard {
 
 		}
 		
-		return leastWasteBrand + " waste the least and use total paint of " + leastWaste +
-				" Litres";
+		return "The "; 
 	}
 
 	private static String calculateCheapest(double roomSize, ArrayList<Paint> paintList) {
@@ -54,7 +53,8 @@ public class PaintWizard {
 
 		}
 
-		return "The cheapest paint to buy for any room is " + cheapestBrand;
+		return "The cheapest paint to buy for any room is: " + cheapestBrand 
+				+ " for £" + cheapest;
 
 	}
 
@@ -72,8 +72,8 @@ public class PaintWizard {
 		paintList.add(paintTwo);
 		paintList.add(paintThree);		
 
-		outputMessage = leastWaste(roomSize, paintList);
-		System.out.println(outputMessage);
+		leastWaste(roomSize, paintList);
+//		System.out.println(outputMessage);
 		outputMessage = calculateCheapest(roomSize, paintList);
 		System.out.println(outputMessage);
 	}

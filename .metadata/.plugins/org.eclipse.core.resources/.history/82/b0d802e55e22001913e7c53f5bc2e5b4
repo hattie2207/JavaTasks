@@ -4,31 +4,19 @@ import java.util.ArrayList;
 
 public class PaintWizard {
 
-	private static String leastWaste(double roomSize, ArrayList<Paint> paintList) {
+	private static void leastWaste(double roomSize, ArrayList<Paint> paintList) {
 		
 		double tempt = 0;
 		double leastWaste = 0;
-		String leastWasteBrand = "";
+		double leastWasteBrand = "";
 
 		for (Paint p : paintList) {
 
-			tempt = (roomSize / p.getCoverSpace()) * p.getVolume();	
-			if (leastWaste == 0) {
-				leastWaste = tempt;
-				leastWasteBrand = p.getPaintBrand();
-			}
-			else if (tempt < leastWaste) {
-				leastWaste = tempt; 
-				leastWasteBrand = p.getPaintBrand();
-			}
-			else {
-
-			}
-
+			waste = (roomSize / p.getCoverSpace()) * ;	
+			System.out.println(waste);
 		}
 		
-		return leastWasteBrand + " waste the least and use total paint of " + leastWaste +
-				" Litres";
+//		return ""; 
 	}
 
 	private static String calculateCheapest(double roomSize, ArrayList<Paint> paintList) {
@@ -54,7 +42,8 @@ public class PaintWizard {
 
 		}
 
-		return "The cheapest paint to buy for any room is " + cheapestBrand;
+		return "The cheapest paint to buy for any room is: " + cheapestBrand 
+				+ " for £" + cheapest;
 
 	}
 
@@ -72,8 +61,8 @@ public class PaintWizard {
 		paintList.add(paintTwo);
 		paintList.add(paintThree);		
 
-		outputMessage = leastWaste(roomSize, paintList);
-		System.out.println(outputMessage);
+		leastWaste(roomSize, paintList);
+//		System.out.println(outputMessage);
 		outputMessage = calculateCheapest(roomSize, paintList);
 		System.out.println(outputMessage);
 	}

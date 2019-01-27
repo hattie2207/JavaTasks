@@ -54,7 +54,8 @@ public class PaintWizard {
 
 		}
 
-		return "The cheapest paint to buy for any room is " + cheapestBrand;
+		return "The cheapest paint to buy for any room is: " + cheapestBrand 
+				+ " for £" + cheapest;
 
 	}
 
